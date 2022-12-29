@@ -1,33 +1,6 @@
 import React from "react";
-import {
-  Chart as ChartJS,
-  ArcElement,
-  Tooltip,
-  Legend,
-  TimeScale,
-  LineController,
-  LineElement,
-  PointElement,
-  CategoryScale,
-  LinearScale,
-} from "chart.js";
+import "chart.js/auto";
 import { Chart } from "react-chartjs-2";
-import "chartjs-adapter-date-fns";
-import ChartDataLabels from "chartjs-plugin-datalabels";
-
-ChartJS.register(
-  ArcElement,
-  Tooltip,
-  Legend,
-  TimeScale,
-  LineController,
-  LineElement,
-  PointElement,
-  CategoryScale,
-  LinearScale,
-  ChartDataLabels
-);
-
 export default function Canvas() {
   const augmentedData = [0, 1, 2];
 
@@ -37,7 +10,7 @@ export default function Canvas() {
     datasets: [
       {
         label: "Your Cost",
-        hidden: true,
+        hidden: false,
         fill: false,
         lineTension: 0,
         backgroundColor: "rgba(75,192,192,1)",
