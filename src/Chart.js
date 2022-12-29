@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React from "react";
 import {
   Chart as ChartJS,
   ArcElement,
@@ -10,7 +10,7 @@ import {
   PointElement,
   CategoryScale,
   LinearScale,
-} from "chart.js/auto";
+} from "chart.js";
 import { Chart } from "react-chartjs-2";
 import "chartjs-adapter-date-fns";
 import ChartDataLabels from "chartjs-plugin-datalabels";
